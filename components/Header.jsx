@@ -7,15 +7,15 @@ import { useTheme } from "next-themes"
 import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet"
 const routes = [
   {
-    "href": "/",
-    "label": "Home",
+    "href": "/hosts/homelab",
+    "label": "Homelab",
   },
   {
-    "href": "/proxmox",
+    "href": "/hosts/proxmox",
     "label": "Proxmox",
   },
   {
-    "href": "/Cloud",
+    "href": "/hosts/cloud",
     "label": "Cloud",
   },
 ]
@@ -78,8 +78,8 @@ const Header = () => {
               onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
             >
               <span className="sr-only">Toggle Theme</span>
-              <Sun className="h-6 w-6 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
-              <Moon className="absolute h-6 w-6 rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
+              <Moon className="h-6 w-6 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
+              <Sun className="absolute h-6 w-6 rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
             </Button>
           </div>
         </div>
